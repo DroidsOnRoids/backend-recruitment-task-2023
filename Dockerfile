@@ -7,6 +7,9 @@ RUN apt-get install -y nodejs
 RUN npm install -g npm@7.14.0
 RUN npm install jest --global
 
+# Install psql
+RUN apt-get install -y postgresql-client
+
 WORKDIR /app
 
 COPY package.json /app/package.json

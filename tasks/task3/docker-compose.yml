@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+  workspace:
+    container_name: workspace
+    image: kzielonka/dor-brt:latest
+    volumes:
+      - .:/app
+      - node-modules:/app/node_modules
+    ports:
+      - 3000:3000
+    networks:
+      - app-network
+    environment:
+      - DB_URL_BASE=postgres://postgres:secret@db:5432
+      - DB_DATABASE=development
+    depends_on:
+      - db
+  db:
+    image: postgres:12.6-alpine
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=secret
+    volumes:
+      - db-data:/var/lib/postgresql/data
+    networks:
+      - app-network
+networks:
+  app-network:
+volumes:
+  node-modules:
+  db-data:
