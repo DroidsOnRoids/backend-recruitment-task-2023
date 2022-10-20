@@ -1,11 +1,18 @@
 # Store
 Let's imagine that we are building the store app.
-It should be the simple store where we can just manage order and products (as admins) and be able to place the order as shopper.
+It should be the simple store where we can just manage orders and products (as admins).
+Customers should be able to place the order.
 
 Run the tests like before:
 ```bash
-npm tests
+npm test
 ```
+or
+```bash
+npm run test-watch
+```
+
+
 Make them green.
 
 1) Add more tests and code to make the store functional.
