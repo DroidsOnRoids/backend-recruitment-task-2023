@@ -9,11 +9,11 @@ and then run this command:
 docker run -v $(pwd)/tasks:/app/tasks -it kzielonka/dor-brt:latest /bin/bash
 ```
 You should get access to `bash`.
-There are two tasks.
-The task 1 is just a warm up which is meant to check that everything is set up properly.
-Please run:
+There are three tasks.
+Task 0 is just to check that everything is set up properly.
 ```
-cd tasks/task1
+cd tasks/task0
 npm test
 ```
-The task 2 is the one on wich we will be pair programming.
+Task 1 is a warm-up.
+Task 3 is the main goal of pair programming.
