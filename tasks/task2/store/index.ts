@@ -1,15 +1,20 @@
-type ProductToAddData = {
+interface ProductToAddData {
   id: string,
   quantity: number,
 }
 
-type Result = {
+interface PlaceOrderData {
+  productId: string,
+  quantity: number,
+}
+
+interface Result {
   status: 'success' | 'failure',
   details: any,
 }
 
 export class Store {
-  placeOrder({ productId, quantity }): Promise<Result> {
+  placeOrder({ productId, quantity }: PlaceOrderData): Promise<Result> {
     return Promise.resolve({
       status: 'failure',
       details: { error: 'unrecognized id' },
