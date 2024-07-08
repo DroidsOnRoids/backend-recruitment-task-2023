@@ -3,7 +3,7 @@
 ## Overview
 
 Welcome to the Store App task!
-In this exercise, you will be developing a simple store application where admins can manage products and orders, while customers can place orders.
+In this exercise, you will be developing a simple store application where admins can manage products, while customers can order them.
 Your goal is to make the store functional by following the instructions provided.
 
 Run the tests like before:
