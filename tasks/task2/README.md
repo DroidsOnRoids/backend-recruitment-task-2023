@@ -20,10 +20,6 @@ npm run test-watch
 
 Make sure all tests pass before submitting your solution.
 
-1. Add more tests and code to make the store functional.
-2. Create products repository.
-3. Add shopper and admin user. Only admin can add products.
-
 ## Task Instructions
 
 1. Make Tests Pass:
@@ -33,19 +29,16 @@ Make sure all tests pass before submitting your solution.
    Extend the current code in the `/store/index.ts` by adding more functionalities along with corresponding tests to make the store functional.
 
 3. Create Products Repository:
-   Implement a products repository that will handle storing and retrieving product information.
+   Implement a product repository that will handle storing and retrieving product information.
 
-4. Add User Roles:
-   Implement shopper and admin roles. Only admins should have the ability to add products. Customers should be able to place an order.
-
-5. Calculate Shipping Cost for Placed Orders:
+4. Calculate Shipping Costs for Placed Orders:
    Calculate the shipping cost using the formula: `shipping cost = 3 \* quantity + 2`.
    For orders with a quantity above 10, the shipping cost is always 35.
 
-6. Free Shipping on Christmas Eve:
+5. Free Shipping on Christmas Eve:
    Add a feature where the shipping cost is free on Christmas Eve (24.12).
 
-7. Improve Type Safety:
+6. Improve Type Safety:
    Fix the Result type to make it more type-safe. Ensure there is no usage of `any` in the details.
 
 ## Submission
