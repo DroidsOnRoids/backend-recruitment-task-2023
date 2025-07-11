@@ -1,10 +1,13 @@
 # Warmup
 
 Just check that you can do:
+
 ```bash
 npm test
 ```
+
 or
+
 ```bash
 npm run test-watch
 ```

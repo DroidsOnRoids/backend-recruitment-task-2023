@@ -8,7 +8,8 @@ In order to run the following code along with our instruction you need to have n
 
 1. **Set Up Your Environment:**
 
-   Install dependencies 
+   Install dependencies
+
    ```bash
    npm install
    ```
