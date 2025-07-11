@@ -2,9 +2,7 @@
 
 Welcome to the DOR recruitment task. Follow the instructions below to set up your environment and complete the tasks.
 
-In order to run the following code along with our instruction you need to have docker installed on your machine.
-
-(If You don't feel free to run it locally on your machine )
+In order to run the following code along with our instruction you need to have nodejs installed on your machine.
 
 ## Getting Started
 
