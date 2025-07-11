@@ -8,10 +8,9 @@ In order to run the following code along with our instruction you need to have n
 
 1. **Set Up Your Environment:**
 
-   Run the following Docker command to start the environment and get access to `bash`:
-
+   Install dependencies 
    ```bash
-   docker run -v $(pwd)/tasks:/app/tasks -it kzielonka/dor-brt:latest /bin/bash
+   npm install
    ```
 
 2. **[Optionally] Verify Setup with Task 0:**
