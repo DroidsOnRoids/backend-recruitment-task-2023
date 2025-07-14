@@ -1,30 +1,30 @@
 interface ProductToAddData {
-  id: string,
-  quantity: number,
+  id: string;
+  quantity: number;
 }
 
 interface PlaceOrderData {
-  productId: string,
-  quantity: number,
+  productId: string;
+  quantity: number;
 }
 
 interface Result {
-  status: 'success' | 'failure',
-  details: any,
+  status: "success" | "failure";
+  details: any;
 }
 
 export class Store {
-  placeOrder({ productId, quantity }: PlaceOrderData): Promise<Result> {
+  placeOrder(placeOrderData: PlaceOrderData): Promise<Result> {
     return Promise.resolve({
-      status: 'failure',
-      details: { error: 'unrecognized id' },
+      status: "failure",
+      details: { error: "unrecognized id" },
     });
   }
 
-  async addProduct({ id, quantity }: ProductToAddData): Promise<Result> {
+  async addProduct(productToAddData: ProductToAddData): Promise<Result> {
     return Promise.resolve({
-      status: 'failure',
-      details: { error: 'unrecognized id' },
+      status: "failure",
+      details: { error: "unrecognized id" },
     });
   }
 }

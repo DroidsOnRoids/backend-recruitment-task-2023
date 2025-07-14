@@ -1,3 +1,3 @@
-const isOk = 'is ok';
+const isOk = "is ok";
 
 export default isOk;

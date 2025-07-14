@@ -1,22 +1,23 @@
 {
-  "name": "dor-brt",
+  "name": "dor-backend-recruitment-task",
   "version": "1.0.0",
   "description": "DOR backend recruitment task",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
+  "author": "Droids on Roids",
   "license": "ISC",
-  "devDependencies": {
-    "@types/jest": "^29.2.0",
-    "ts-jest": "^29.0.3",
-    "typescript": "^4.8.4"
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prettier": "prettier --write ."
   },
-  "dependencies": {
-    "@babel/core": "^7.19.6",
-    "@babel/preset-env": "^7.19.4",
-    "babel-jest": "^29.2.1",
-    "ts-node": "^10.9.1"
+  "devDependencies": {
+    "@eslint/js": "^9.30.1",
+    "eslint": "^9.30.1",
+    "eslint-config-prettier": "^10.1.5",
+    "globals": "^16.3.0",
+    "prettier": "3.6.2",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.36.0",
+    "vite": "^7.0.4",
+    "vitest": "^3.2.4"
   }
 }

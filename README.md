@@ -2,18 +2,16 @@
 
 Welcome to the DOR recruitment task. Follow the instructions below to set up your environment and complete the tasks.
 
-In order to run the following code along with our instruction you need to have docker installed on your machine.
-
-(If You don't feel free to run it locally on your machine )
+In order to run the following code along with our instruction you need to have nodejs installed on your machine.
 
 ## Getting Started
 
 1. **Set Up Your Environment:**
 
-   Run the following Docker command to start the environment and get access to `bash`:
+   Install dependencies
 
    ```bash
-   docker run -v $(pwd)/tasks:/app/tasks -it kzielonka/dor-brt:latest /bin/bash
+   npm install
    ```
 
 2. **[Optionally] Verify Setup with Task 0:**

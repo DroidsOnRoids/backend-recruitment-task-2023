@@ -1,5 +1,3 @@
-const div = (a, b) => {
+export const div = (a: number, b: number): number => {
   return a / b;
-}
-
-module.exports = div;
+};
