@@ -10,12 +10,10 @@ interface PlaceOrderData {
 
 interface Result {
   status: "success" | "failure";
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   details: any;
 }
 
 export class Store {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   placeOrder(placeOrderData: PlaceOrderData): Promise<Result> {
     return Promise.resolve({
       status: "failure",
@@ -23,7 +21,6 @@ export class Store {
     });
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   async addProduct(productToAddData: ProductToAddData): Promise<Result> {
     return Promise.resolve({
       status: "failure",

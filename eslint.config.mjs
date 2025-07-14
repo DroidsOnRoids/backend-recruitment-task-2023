@@ -8,7 +8,7 @@ export default defineConfig([
   {
     files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
     plugins: { js },
-    extends: ["js/recommended"],
+    extends: ["js/recommended"]
   },
   {
     files: ["**/*.{js,mjs,cjs,ts,mts,cts}"],
@@ -16,4 +16,10 @@ export default defineConfig([
   },
   tseslint.configs.recommended,
   eslintConfigPrettier,
+  {
+    rules: {
+      "@typescript-eslint/no-unused-vars": "warn",
+      "@typescript-eslint/no-explicit-any": "warn",
+    },
+  },
 ]);
